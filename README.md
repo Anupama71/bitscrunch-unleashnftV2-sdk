@@ -316,7 +316,7 @@ except APIError as e:
    - `blockchains` (`list` of `str`): List of blockchain types to query (e.g., ['Ethereum', 'Binance Smart Chain']).
    - `offset` (`int`): Pagination offset, default is `0`.
    - `limit` (`int`): Number of items to return, maximum is `100`, default is `30`.
+---
 
 
-
-### Similarly, all APIs under Unleash NFT v2 are defined.
+# Similarly, all APIs under Unleash NFT v2 are defined.
