@@ -83,7 +83,8 @@ Before using the SDK, initialize it with your API key:
 from bitscrunch_unleashnftV2_sdk import DeFi
 
 # Initialize the SDK with your API key
-sdk = DeFi(api_key="Your-API-Key")
+api_key = "Your_API_Key"
+market_sdk = NFT_Market_Insights(api_key)
 ```
 
 #Example Usage
