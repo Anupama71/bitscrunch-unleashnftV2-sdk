@@ -65,7 +65,7 @@ Install the SDK using `pip`:
 pip install bitscrunch-unleashnftV2-sdk==2.0.0
 ```
 
-##Getting Started
+Getting Started
 
 Importing the SDK
 
