@@ -108,4 +108,74 @@ try:
 except APIError as e:
     print(f"API Error: {e}")
 
+```
+
+# Details Reagarding Different Functions/API(s):
+
+A) NFT_Brand:
+
+1. get_brand_metadata
+Parameters:
+
+blockchain (str): Blockchain type, default is "ethereum".
+brand (list of str): List of brand names to fetch metadata for, default is None.
+offset (int): Index of the page to return, default is 0.
+limit (int): Number of items to return in the result set, default is 30.
+2. get_brand_metrics
+Parameters:
+
+blockchain (str): Blockchain type, default is "ethereum".
+brand (list of str): List of brand names to fetch metrics for, default is None.
+time_range (str): Time range for metrics, default is "24h".
+offset (int): Index of the page to return, default is 0.
+limit (int): Number of items to return in the result set, default is 30.
+sort_by (str): Field to sort metrics by, default is "mint_tokens".
+sort_order (str): Sorting order, default is "desc".
+3. get_brand_profile
+Parameters:
+
+blockchain (str): Blockchain type, default is "ethereum".
+brand (list of str): List of brand names to fetch profile for, default is None.
+time_range (str): Time range for profile data, default is "24h".
+offset (int): Index of the page to return, default is 0.
+limit (int): Number of items to return in the result set, default is 30.
+sort_by (str): Field to sort profile by, default is "diamond_hands".
+sort_order (str): Sorting order, default is "desc".
+4. get_brand_contract_metadata
+Parameters:
+
+blockchain (str): Blockchain type, default is "ethereum".
+contract_address (list of str): List of contract addresses to fetch metadata for, default is None.
+offset (int): Index of the page to return, default is 0.
+limit (int): Number of items to return in the result set, default is 30.
+5. get_brand_contract_metrics
+Parameters:
+
+blockchain (str): Blockchain type, default is "ethereum".
+contract_address (list of str): List of contract addresses to fetch metrics for, default is None.
+time_range (str): Time range for metrics, default is "24h".
+offset (int): Index of the page to return, default is 0.
+limit (int): Number of items to return in the result set, default is 30.
+sort_by (str): Field to sort metrics by, default is "mint_tokens".
+sort_order (str): Sorting order, default is "desc".
+6. get_brand_contract_profile
+Parameters:
+
+blockchain (str): Blockchain type, default is "ethereum".
+contract_address (list of str): List of contract addresses to fetch profile for, default is None.
+time_range (str): Time range for profile data, default is "24h".
+offset (int): Index of the page to return, default is 0.
+limit (int): Number of items to return in the result set, default is 30.
+sort_by (str): Field to sort profile by, default is "diamond_hands".
+sort_order (str): Sorting order, default is "desc".
+7. get_brand_category
+Parameters:
+
+blockchain (str): Blockchain type, default is "ethereum".
+category (list of str): List of categories to fetch data for, default is None.
+offset (int): Index of the page to return, default is 0.
+limit (int): Number of items to return in the result set, default is 30.
+
+
+
 
