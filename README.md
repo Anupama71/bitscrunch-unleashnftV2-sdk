@@ -112,7 +112,7 @@ except APIError as e:
 
 # Details Reagarding Different Functions/API(s):
 
-A) NFT_Brand:
+#### A) NFT_Brand:
 
 ### 1. `get_brand_metadata`
    **Parameters:**
@@ -187,7 +187,7 @@ A) NFT_Brand:
    - `offset` (`int`): Index of the page to return, default is `0`.
    - `limit` (`int`): Number of items to return in the result set, default is `30`.
 
-B) CollectionAPI:
+#### B) CollectionAPI:
 
 ### 1. `get_collection_metadata`
    **Parameters:**
@@ -281,6 +281,41 @@ B) CollectionAPI:
    - `sort_order` (`str`): Order of sorting, default is `'desc'`.
 
 ---
+
+#### C) DeFi:
+
+### 1. `get_defi_pool_metadata(self, blockchains=None, pair_addresses=None, offset=0, limit=30)`
+   **Parameters:**
+   - `blockchains` (`list` of `str`): List of blockchain types to query, default is `None`.
+   - `pair_addresses` (`list` of `str`): List of pair addresses for the DeFi pools, default is `None`.
+   - `offset` (`int`): Pagination offset, default is `0`.
+   - `limit` (`int`): Number of items to return, default is `30`.
+
+---
+
+### 2. `get_defi_pool_metrics(self, blockchain, pair_address, offset=0, limit=30)`
+   **Parameters:**
+   - `blockchain` (`str`): The blockchain type (e.g., 'Ethereum').
+   - `pair_address` (`str`): The address of the DeFi pool.
+   - `offset` (`int`): Pagination offset, default is `0`.
+   - `limit` (`int`): Number of items to return, default is `30`.
+
+---
+
+### 3. `get_defi_protocol_metadata(self, blockchain, protocol, offset=0, limit=30)`
+   **Parameters:**
+   - `blockchain` (`str`): The blockchain type (e.g., 'Ethereum').
+   - `protocol` (`str`): The identifier for the DeFi protocol (e.g., 'Uniswap').
+   - `offset` (`int`): Pagination offset, default is `0`.
+   - `limit` (`int`): Number of items to return, default is `30`.
+
+---
+
+### 4. `get_supported_defi_protocols(self, blockchains, offset=0, limit=30)`
+   **Parameters:**
+   - `blockchains` (`list` of `str`): List of blockchain types to query (e.g., ['Ethereum', 'Binance Smart Chain']).
+   - `offset` (`int`): Pagination offset, default is `0`.
+   - `limit` (`int`): Number of items to return, maximum is `100`, default is `30`.
 
 
 
