@@ -187,6 +187,100 @@ A) NFT_Brand:
    - `offset` (`int`): Index of the page to return, default is `0`.
    - `limit` (`int`): Number of items to return in the result set, default is `30`.
 
+B) CollectionAPI:
+
+### 1. `get_collection_metadata`
+   **Parameters:**
+   - `sort_order` (`str`): The order to sort the result set, defaults to `'desc'`.
+   - `offset` (`int`): Index of the page to return, defaults to `0`.
+   - `limit` (`int`): Number of items to return in the result set, defaults to `30`.
+   - `contract_address` (`str` or `list` of `str`): Comma-separated string or list of contract addresses to fetch metadata for, default is `None`.
+
+---
+
+### 2. `get_collection_analytics_data`
+   **Parameters:**
+   - `blockchain` (`str`): Blockchain type, default is `'ethereum'`.
+   - `contract_address` (`list` of `str`): List of contract addresses to include in the aggregation, default is `None`.
+   - `offset` (`int`): Pagination offset, default is `0`.
+   - `limit` (`int`): Pagination limit, default is `30`.
+   - `sort_by` (`str`): Property to sort the results by, default is `'sales'`.
+   - `time_range` (`str`): Time range for filtering the results, default is `'24h'`.
+   - `sort_order` (`str`): Order to sort the result set by, default is `'desc'`.
+
+---
+
+### 3. `get_collection_holders_data`
+   **Parameters:**
+   - `blockchain` (`str`): Blockchain type, default is `'ethereum'`.
+   - `contract_address` (`list` of `str`): List of contract addresses to include in the query, default is `None`.
+   - `time_range` (`str`): The time range over which to filter results, default is `'24h'`.
+   - `offset` (`int`): Pagination offset, default is `0`.
+   - `limit` (`int`): Number of results to return, default is `30`.
+   - `sort_by` (`str`): Property to sort results by, default is `'holders'`.
+   - `sort_order` (`str`): Order of sorting, default is `'desc'`.
+
+---
+
+### 4. `get_collection_scores`
+   **Parameters:**
+   - `blockchain` (`str`): Blockchain type, default is `'ethereum'`.
+   - `contract_address` (`str` or `list` of `str`): Contract address or list of addresses to include in the query, default is `None`.
+   - `time_range` (`str`): Time range for filtering results, default is `'24h'`.
+   - `offset` (`int`): Pagination offset, default is `0`.
+   - `limit` (`int`): Number of items to return, default is `30`.
+   - `sort_by` (`str`): Property to sort results by, default is `'market_cap'`.
+   - `sort_order` (`str`): Order of sorting, default is `'desc'`.
+
+---
+
+### 5. `get_collection_traders_data`
+   **Parameters:**
+   - `blockchain` (`str`): Blockchain type, default is `'ethereum'`.
+   - `contract_address` (`str` or `list` of `str`): Contract address or list of addresses to include in the query, default is `None`.
+   - `time_range` (`str`): Time range for filtering results, default is `'24h'`.
+   - `offset` (`int`): Pagination offset, default is `0`.
+   - `limit` (`int`): Number of items to return, default is `30`.
+   - `sort_by` (`str`): Property to sort results by, default is `'traders'`.
+   - `sort_order` (`str`): Order of sorting, default is `'desc'`.
+
+---
+
+### 6. `get_collection_washtrade_data`
+   **Parameters:**
+   - `blockchain` (`str`): Blockchain type, default is `'ethereum'`.
+   - `contract_address` (`str` or `list` of `str`): Contract address or list of addresses to include in the query, default is `None`.
+   - `time_range` (`str`): Time range for filtering results, default is `'24h'`.
+   - `offset` (`int`): Pagination offset, default is `0`.
+   - `limit` (`int`): Number of items to return, default is `30`.
+   - `sort_by` (`str`): Property to sort results by, default is `'washtrade_assets'`.
+   - `sort_order` (`str`): Order of sorting, default is `'desc'`.
+
+---
+
+### 7. `get_collection_whales_data`
+   **Parameters:**
+   - `blockchain` (`str`): Blockchain type, default is `'ethereum'`.
+   - `contract_address` (`str` or `list` of `str`): Contract address or list of addresses to include in the query, default is `None`.
+   - `time_range` (`str`): Time range for filtering results, default is `'24h'`.
+   - `offset` (`int`): Pagination offset, default is `0`.
+   - `limit` (`int`): Number of items to return, default is `30`.
+   - `sort_by` (`str`): Property to sort results by, default is `'nft_count'`.
+   - `sort_order` (`str`): Order of sorting, default is `'desc'`.
+
+---
+
+### 8. `get_collection_profile_data`
+   **Parameters:**
+   - `blockchain` (`str`): Blockchain type, default is `'ethereum'`.
+   - `contract_address` (`str` or `list` of `str`): Contract address or list of addresses to include in the query, default is `None`.
+   - `time_range` (`str`): Time range for filtering results, default is `'all'`.
+   - `offset` (`int`): Pagination offset, default is `0`.
+   - `limit` (`int`): Number of items to return, default is `30`.
+   - `sort_by` (`str`): Property to sort results by, default is `'washtrade_index'`.
+   - `sort_order` (`str`): Order of sorting, default is `'desc'`.
+
+---
 
 
 
