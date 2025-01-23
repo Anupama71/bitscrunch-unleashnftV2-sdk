@@ -72,7 +72,7 @@ Importing the SDK
 You can import specific modules depending on the APIs you want to use. For example:
 
 ```bash
-from bitscrunch_unleashnftV2_sdk import NFT_Collections, NFT_Marketplace
+from bitscrunch_unleashnftV2_sdk import NFT_Market_Insights
 ```
 
 Initialization
@@ -80,7 +80,7 @@ Initialization
 Before using the SDK, initialize it with your API key:
 
 ```bash
-from bitscrunch_unleashnftV2_sdk import DeFi
+from bitscrunch_unleashnftV2_sdk import NFT_Market_Insights
 
 # Initialize the SDK with your API key
 api_key = "Your_API_Key"
@@ -92,9 +92,10 @@ market_sdk = NFT_Market_Insights(api_key)
 Analyze NFT Market Insights
 
 ```bash
-from bitscrunch_unleashnftV2_sdk import NFT_Marketplace
-# Initialize the SDK
-sdk = NFT_Marketplace(api_key="Your-API-Key")
+from bitscrunch_unleashnftV2_sdk import NFT_Market_Insights
+
+# Initialize the SDK with your API key
+api_key = "Your API Key"
 market_sdk = NFT_Market_Insights(api_key)
 
 # Get market analytics for Ethereum blockchain and last 24 hours
@@ -106,4 +107,5 @@ try:
         print("No data available.")
 except APIError as e:
     print(f"API Error: {e}")
+
 
