@@ -63,3 +63,15 @@ Install the SDK using `pip`:
 
 ```bash
 pip install bitscrunch-unleashnftV2-sdk==2.0.0
+
+##Getting Started
+
+Importing the SDK
+You can import specific modules depending on the APIs you want to use. For example:
+
+```bash
+from bitscrunch_unleashnftV2_sdk import NFT_Collections, NFT_Marketplace
+
+
+
+
