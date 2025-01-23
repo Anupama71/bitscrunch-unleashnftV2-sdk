@@ -63,15 +63,46 @@ Install the SDK using `pip`:
 
 ```bash
 pip install bitscrunch-unleashnftV2-sdk==2.0.0
+```
 
 ##Getting Started
 
 Importing the SDK
+
 You can import specific modules depending on the APIs you want to use. For example:
 
 ```bash
 from bitscrunch_unleashnftV2_sdk import NFT_Collections, NFT_Marketplace
+```
 
+Initialization
 
+Before using the SDK, initialize it with your API key:
 
+```bash
+from bitscrunch_unleashnftV2_sdk import DeFi
+
+# Initialize the SDK with your API key
+sdk = DeFi(api_key="Your-API-Key")
+```
+
+#Example Usage
+
+Analyze NFT Market Insights
+
+```bash
+from bitscrunch_unleashnftV2_sdk import NFT_Marketplace
+# Initialize the SDK
+sdk = NFT_Marketplace(api_key="Your-API-Key")
+market_sdk = NFT_Market_Insights(api_key)
+
+# Get market analytics for Ethereum blockchain and last 24 hours
+try:
+    response = market_sdk.get_market_analytics(blockchain="ethereum", time_range="24h")
+    if response:
+        print("Market Insights Data:", response)
+    else:
+        print("No data available.")
+except APIError as e:
+    print(f"API Error: {e}")
 
